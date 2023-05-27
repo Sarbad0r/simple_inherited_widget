@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class StateModel extends ChangeNotifier {
+class StateModel {
   int counter = 0;
   VoidCallback setState;
 

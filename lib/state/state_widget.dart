@@ -9,13 +9,8 @@ import 'package:inherited_widget_example/state_model/state_model.dart';
 class StateWidget extends InheritedWidget {
   //the variables that can see every widget under the tree
   final StateModel stateModel;
-  final _HomePageState homePageState;
 
-  const StateWidget(
-      {Key? key,
-      required Widget child,
-      required this.stateModel,
-      required this.homePageState})
+  const StateWidget({Key? key, required Widget child, required this.stateModel})
       : super(key: key, child: child);
 
   static StateWidget of(BuildContext context) {
@@ -61,7 +56,6 @@ class _HomePageState extends State<HomePage> {
     return StateWidget(
         //if you want that child widgets that implements inherited widget don't use "const"
         // otherwise they will not work
-        homePageState: this,
         stateModel: stateModel,
         //for example here below
         child: HomePageScreen());

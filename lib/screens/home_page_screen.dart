@@ -13,7 +13,7 @@ class HomePageScreen extends StatelessWidget {
         floatingActionButton: FloatingActionButton(
             onPressed: () => inheritedWidget.increment(),
             child: const Icon(Icons.add)),
-        appBar: AppBar(),
+        appBar: AppBar(title: const Text("Inherited Widget")),
         body: Center(child: Text("${inheritedWidget.counter}")));
   }
 }

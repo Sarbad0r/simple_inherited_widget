@@ -1,4 +1,6 @@
-//
+//ignore_for_file: non_constant_identifier_names
+//ignore_for_file: prefer_final_fields
+
 
 import 'package:flutter/material.dart';
 import 'package:flutter/material.dart';
@@ -43,6 +45,8 @@ class _HomePageState extends State<HomePage> {
     super.initState();
     //initial our stateModel sending the method that calls "setState"
     stateModel = StateModel(setState: setStateModel);
+
+    stateModel.increment();
   }
 
   //create a method of setState, then we will send this method to the stateModel

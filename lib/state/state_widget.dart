@@ -3,9 +3,7 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
-import 'package:flutter/material.dart';
 import 'package:inherited_widget_example/screens/home_page_screen.dart';
-import 'package:inherited_widget_example/state/state_widget.dart';
 import 'package:inherited_widget_example/state_model/state_model.dart';
 
 class StateWidget extends InheritedWidget {
@@ -41,7 +39,7 @@ class _HomePageState extends State<HomePage> {
 
   @override
   void initState() {
-    // TODO: implement initState
+   
     super.initState();
     //initial our stateModel sending the method that calls "setState"
     stateModel = StateModel(setState: setStateModel);
